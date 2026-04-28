@@ -27,6 +27,10 @@
 
         <h2 class="text-center mb-4">📝 Task Manager</h2>
         <p class="text-center text-muted">Simple & clean task tracker</p>
+         <p class="text-end">
+    Logged in as user #{{ session["user_id"] }}
+    | <a href="/logout">Logout</a>
+</p>   
 
         <!-- Add Task -->
         <form action="/add" method="post" class="d-flex gap-2 mb-4">
